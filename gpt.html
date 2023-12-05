@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- Add the lang attribute to specify the document language -->
 <head>
+    <meta charset="UTF-8"> <!-- Add the character encoding -->
     <title>ChatGPT Website</title>
     <style>
         /* CSS for styling */
         body {
-            background-image: url('https://th.bing.com/th/id/R.c6c592b55bb6d61bb53a504344256742?rik=bh3f5t61tnC91A&riu=http%3a%2f%2fsites.psu.edu%2fmarvelstudios%2fwp-content%2fuploads%2fsites%2f40386%2f2016%2f03%2fironman_marvel.jpg&ehk=Bjr%2bGNWvRgyFCZXuECMZMPUTt8UcZCmsCU6lldgSsSU%3d&risl=&pid=ImgRaw&r=0');
+            background-image: url('https://www.bing.com/images/search?view=detailV2&ccid=7qkKKN27&id=3BCC44DD17F7884E2F4DB2BD6496C9E58D99CEEE&thid=OIP.7qkKKN27l9UPnxd39_6ffwHaNI&mediaurl=https%3a%2f%2fwallpaperaccess.com%2ffull%2f2568553.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.eea90a28ddbb97d50f9f1777f7fe9f7f%3frik%3d7s6ZjeXJlmS9sg%26pid%3dImgRaw%26r%3d0&exph=2127&expw=1200&q=ironman&simid=608048854376545359&FORM=IRPRST&ck=6793BB2F5B2463FAC62654FB88AA3E6A&selectedIndex=13&itb=0');
             background-size: cover;
             font-family: Arial, sans-serif;
         }
@@ -43,6 +44,11 @@
             padding: 10px;
             text-align: center;
         }
+        /* Add CSS styles for labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -64,7 +70,7 @@
     <div class="section">
         <h2>Video Demo</h2>
         <video class="video" controls>
-            <source src="https://www.youtube.com/watch?v=QQdJn8WbzBc" type="video/mp4">
+            <source src="demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -72,8 +78,11 @@
     <div class="section">
         <h2>Contact Us</h2>
         <p>Feel free to reach out to us:</p>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
+        <!-- Add labels for input fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Email">
         <button>Submit</button>
     </div>
     
