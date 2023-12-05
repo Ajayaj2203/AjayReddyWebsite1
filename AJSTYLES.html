@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"> <!-- Add the lang attribute to specify the document language -->
 <head>
+    <meta charset="UTF-8"> <!-- Add the character encoding -->
     <title>AJ STYLES Brushes</title>
     <style>
         /* CSS for styling */
         body {
-            background-image: url('https://th.bing.com/th/id/R.3273f627cb857287b4f38f1576b4e17b?rik=mPp%2bubu9nPa%2b3Q&riu=http%3a%2f%2fwww.proconstructionguide.com%2fwp-content%2fuploads%2f2013%2f05%2fbrushes-2.jpg&ehk=bQ4ZHDAlq44%2fekNcJuJV3vDtSNDSQHmKs8cz9tMUwp4%3d&risl=&pid=ImgRaw&r=0');
+            background-image: url('https://www.bing.com/images/search?q=brushimages&FORM=IQFRBA&id=224F3E7C6BDF443CB00DDC680B656833C15BA7A8');
             background-size: cover;
             font-family: Arial, sans-serif;
         }
@@ -43,6 +44,11 @@
             padding: 10px;
             text-align: center;
         }
+        /* Add CSS styles for labels */
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -72,8 +78,11 @@
     <div class="section">
         <h2>Contact Us</h2>
         <p>Have questions or need assistance? Reach out to us:</p>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Email">
+        <!-- Add labels for input fields -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Email">
         <button>Submit</button>
     </div>
     
@@ -82,4 +91,3 @@
     </footer>
 </body>
 </html>
-s
